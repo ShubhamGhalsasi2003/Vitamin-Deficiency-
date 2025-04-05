@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitamin Deficiency Detection</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <script defer src="script1.js"></script>
+</head>
+<body>
+    <!-- Background Section -->
+    <div class="full-page-background"></div>
+    
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <h1 class="logo">Vitamin Deficiency Detection</h1>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="profile.html">Profile</a>
+                    <a href="login.html">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Sections -->
+    <main class="content-wrapper">
+        <!-- Hero/Banner Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="fade-in">Vitamin Deficiency Detection</h1>
+                <p class="fade-in">Upload an image to detect potential vitamin deficiencies using our advanced AI technology.</p>
+            </div>
+        </header>
+
+        <!-- Upload/Detection Section -->
+        <section class="upload-section">
+            <h2>Upload Image for Analysis</h2>
+            <div class="upload-area" id="uploadArea">
+                <p>Click to browse or drag and drop an image</p>
+                <input type="file" id="imageUpload" accept="image/*">
+                <img id="imagePreview" alt="Preview">
+            </div>
+            <button class="detect-btn" id="detectBtn" disabled>Detect Deficiency</button>
+            
+            <div class="results-section" id="resultsSection" hidden>
+                <div id="resultsContent"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

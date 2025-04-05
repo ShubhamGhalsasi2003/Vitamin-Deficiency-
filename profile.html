@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Vitamin Deficiency Detection</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <img src="bg1.jpg" alt="Background" class="background-image">
+    <nav class="navbar">
+        <h1 class="logo">Vitamin Deficiency Detection</h1>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="profile.html">Profile</a>
+                    <a href="login.html">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- Left Side - Profile Section -->
+        <div class="profile-section">
+            <div class="profile-photo-container">
+                <img src="profile.jpg" alt="Profile Photo" class="profile-photo" id="profilePhoto">
+                <input type="file" id="profileUpload" accept="image/*" style="display: none;">
+                <button class="upload-btn" id="uploadProfileBtn">Change Photo</button>
+            </div>
+            
+            <div class="profile-details">
+                <div class="detail-item">
+                    <span class="detail-label">Name:</span>
+                    <span class="detail-value" id="userName">N/A</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value" id="userEmail">N/A</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Phone:</span>
+                    <span class="detail-value" id="userPhone">N/A</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Age:</span>
+                    <span class="detail-value" id="userAge">N/A</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right Side - Reports History -->
+        <div class="reports-section">
+            <h2>Your Deficiency Reports</h2>
+            <div class="reports-list" id="reportsList">
+                <!-- Reports will be dynamically inserted here -->
+                <div class="no-reports">No reports generated yet</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
