@@ -1,4 +1,4 @@
-# 🥗 Vitamin Deficiency Detection System
+#  Vitamin Deficiency Detection System
 
 This is a project I built to detect common vitamin deficiencies (A, B, C, D, E) from an image uploaded by the user.  
 The goal is to make a simple tool where someone can upload a photo, and the system will predict which vitamin might be lacking based on trained models.
