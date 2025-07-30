@@ -18,6 +18,7 @@ Backend	Python (FastAPI)
 ML Inference	PyTorch and Scikit-learn
 Database	SQLite (users.db)
 Server	Uvicorn, Pillow
+
 🗂 Project Structure
 minimini/
 ├── app.py                     # FastAPI app
